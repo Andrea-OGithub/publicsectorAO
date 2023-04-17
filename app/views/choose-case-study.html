@@ -1,0 +1,55 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="" method="post">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              Which project would you like to see?
+  
+            </legend>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="upload-yes" name="next-page" type="radio" value="GDS" data-value="Yes" >
+                <label class="govuk-label govuk-radios__label" for="upload-yes">
+                  Government Digital Service (GDS) - Service Management Platforms
+  
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="upload-no"
+  
+                  name="next-page" type="radio" value="MOJ" data-value="No" >
+                <label class="govuk-label govuk-radios__label" for="upload-no">
+                  Ministry of Justice - Online Signposting Tool Discovery
+  
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <button type="submit" class="govuk-button" data-module="govuk-button">Continue</button>
+      </form>
+ 
+
+      
+
+    </div>
+  </div>
+
+{% endblock %}

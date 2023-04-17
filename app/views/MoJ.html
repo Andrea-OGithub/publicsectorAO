@@ -1,0 +1,55 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Ministry of Justice - Online Signposting Tool Discovery
+      </h1>
+
+      <p>
+        <strong>Role:</strong> Interaction designer
+      </p>
+      <p><strong>GOV Agile phase:</strong> discovery (Dec 2022 - Feb 2023)</p>
+   <p>A five sprint discovery to understand the needs of people in the private renting sector facing the possibility of eviction.</p>
+   <p><strong>Outcomes:</strong> defined problem, identified pain points and user needs.  Service map and prototype concept to explore further in Alpha.</p>
+   <hr>
+   <p><strong>Sprint 1: </strong></p><p>The focus of the first and second sprints was to establish ways of working in our multidisciplinary team, align on scope and conduct stakeholder interviews. These conversations were important to shape the hypotheses to test with users and inform the prototype. From these interviews, we were able to create some hypotheses and assumptions to test with users. One of the initial assumptions, for example, was that the volume and mistrust of information was a problem for users. User interviews later in the discovery process, however, showed that the real problem was the lack of awareness about relevant information.
+   </p>
+
+   <p><strong>Sprint 2:</strong> </p><p>In the second sprint, the client also asked that the team prioritise an online signposting tool for testing as it had come out as an effective tool following a mini-discovery the MoJ had done before. This information was useful in creating an effective plan for the next sprint.</p>
+   <p><strong>Sprint 3:</strong></p><p> My main focus on the third sprint was to create a five screen prototype on Figma which would be used in user testing to shape our discovery. The reason for choosing Figma to create the prototype instead of coding using the GOV.UK prototype kit was the time constraints and our aim which was to illustrate a concept to participants in a visual way which could be ready quickly. 
+    The background reading and stakeholder interviews allowed us to set out a simplified version of the journey a user would take on a possible signposting tool. The user would first see a landing screen explaining the next steps, then be asked a series of questions which would determine the advice and suggested next steps on the final screen. One of our recommendations for Alpha, is to use the GOV.UK prototype kit to code an accessible prototype which can be used with screen readers and is adaptable.</p>
+    <img src="/public/images/MOJPROTOTYPE.png" width="600" height="360" alt="journey of prototype screens">
+<p>The focus of the research was to understand the barriers that users faced when looking for information on their rights in a private eviction. Early on, there was the assumption that the volume and mistrust of information was a problem for users, however, research showed it was often the lack of awareness about relevant information that was a problem for users.
+  Although each user had unique factors which led to their eviction, there were common scenarios we were able to map out and use in our final report and recommendations. One of those scenarios for example was a user receiving correspondence from their landlord and assuming it was a legal and acceptable eviction notice and not knowing their options. In reality, there are specific requirements for a legal eviction notice and among the users we spoke with, we found that most of them were not aware of the legalities around eviction or what their options were if they received one. The prototype we created for testing was designed for people to turn to as soon as they receive any eviction correspondence. They would answer a few questions and receive tailored information on their possible next steps.
+  </p>
+  <p><strong>Sprint 4:</strong></p> <p>In sprint four the focus was analysing the user research responses and identifying pain points, user needs and creating personas. During this sprint we also hosted a show and tell for the client and walked them through our process to that point. The results of the user research suggested some of the hypotheses made during stakeholder interviews and desk research were correct - people are likely to use a tool like this for tailored advice and the tool would complement existing online information from third party advisors or Local Authorities. The research also brought up questions to explore in Alpha - what could a tool like this offer beyond signposting? What is the best format to reach the most vulnerable users?
+  </p>
+  <img src="/public/images/MOJPERSONAS.png" width="600" height="360" alt="user persona illustrations">
+<p><strong>Sprint 5:</strong></p> <p>The final sprint was focused on bringing together what we found in the research, feedback on the prototype and recommendations for an Alpha. In preparation for our final report, the team got together for an ideation workshop with our client. We shared the results from the research in more detail and prioritised the pain points and user needs. We introduced the client to Crazy 8s as an exercise to come up with possible solutions beyond a signposting tool which could be explored in an Alpha stage.
+  In the fifth sprint we also agreed on the product vision and measures of success for what the future service would be. The final activity of the sprint was to present the in depth process and findings to the client in a show and tell.
+  </p>
+  <p><strong>Retro:</strong></p> <p>At our final team retro, we reflected on what we wish we could have done if we had more time. We all agreed that more time for research would have been ideal, especially to speak with more participants from Wales. With such short notice, it was difficult to speak with participants with different accessibility needs and those with English as an additional language. Having said that, we were glad to have spoken with a diverse group of participants in terms of age, gender and disabilities.
+  </p>
+      </p>
+
+     
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Government Digital Service (GDS) - Service Management Platforms
+      </h1>
+
+      <p>
+        <strong>Role:</strong> Interaction designer
+        </p>
+        <p><strong>GOV Agile phase:</strong> discovery (Feb 2023 - Apr 2023)</p>
+     
+        
+       <p>An eight-week discovery, broken down into two week sprints, to understand the needs of GDS departments when they carry out service management.</p>
+       <p> My workstream was one of five in a wider GDS platforms project. We collaborated across workstreams to make sure we were always in line with the overall project aim which was to understand <em>horizontal elements of GDS - cyber security, professions and central tools/service management.</em>  </p> 
+        
+       <p><strong>Outcomes:</strong> defined problem, identified pain points and user needs, a common service management definition. A service management strategy with clear steps to follow and tool recommendations. Prototype concept to explore further in Alpha.</p> 
+        
+      </p>
+
+      <p>
+       <hr>
+
+        <p><strong>Sprints 1 and 2:</strong></p>
+        <p>The focus of the first and second sprints was to establish ways of working in our multidisciplinary team, align on scope and conduct stakeholder interviews. These conversations were important to shape the hypotheses to test with users and inform the prototype. From these interviews, we were able to create some hypotheses and assumptions to test with users. A big theme that came out from these conversations was the lack of cohesion in service management processes within GDS. Each of the teams we spoke with had their own ways of managing incidents, documenting decisions and reporting service health. </p>
+        <p><strong>Sprint 3:</strong></p>
+        <p>From the feedback, we heard that a dashboard, service catalogue and organisation map would be helpful for service management. For the third sprint, I suggested we do further research with users into <em>must haves</em> and <em>should haves</em> for these interfaces and use those findings to ideate. I led the users in a co-design exercise which allowed me to create the prototypes to test in the next sprint. I chose to use Figma to create the prototypes to test. 
+        </p>
+      </p>
+      <img src="/public/images/GDSQUOTE1.png" alt="There is a need for a map to understand ownership and management of services.“ - UR Participant">
+      <P>The reason for choosing Figma to create the prototype instead of coding using the GOV.UK prototype kit was the time constraints and our aim which was to illustrate a concept to participants in a visual way which could be ready quickly. The final sprint was focused on bringing together what we found in the research, feedback on the prototype and recommendations for an Alpha. I also decided to create a service management definition because in the initial round of research, there was no single and constant definition of service management shared across the GDS departments we spoke with. I used the common features of responses and traditional ITIL (Information Technology Infrastructure Library) principles of service management and created a definition to test. We had positive feedback for this approach.
+      </P>
+      <P><strong>Sprint 4:</strong></P>
+      <p>The final sprint was focused on testing the prototypes and analysing the feedback from the sessions. There was feedback which we expected such as teams having established ways of working and not wanting extra processes and “more hoops to jump through”. There was some surprising feedback from many users wanting more support in sharing knowledge across product teams, users wanted to have and share recommendations with other product teams about tooling and ways of working which might help them improve in their own work.
+        In this sprint, we also created a final report for the client including carefully weighed options for service management within GDS. We made recommendations tailored to the needs of GDS using the research we carried out.
+        </p>
+        <img src="/public/images/GDSQUOTE2.png" alt="Support for individual teams as opposed to more processes, they do not want more hoops to jump through - UR Participant">
+      <p><strong>Retro:</strong></p>
+      <p>At our final team retro, we reflected on what we wish we could have done if we had more time. We all agreed that more time for research would have been ideal, especially to speak with more participants from the 80+ product team to understand their process and find common factors between them all. </p>   
+      <img src="/public/images/GDSDASHBOARD.png" width="600" height="360" alt="a basic mock-up of a dashboard for service management. The screen is split into sections for incidents, summary data, useful links and data on service health. There is non-specific data and a pie chart to show what a dashboard could look like.">
+    <p><small>Above: One of the dashboard screens used in testing</small></p>
+    </div>
+  </div>
+
+{% endblock %}
